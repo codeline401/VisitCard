@@ -1,3 +1,4 @@
+import 'package:carte_visite/ressources/consts_global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
@@ -7,7 +8,7 @@ class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff052555),
+      backgroundColor: const Color(colorBackground),
       appBar: AppBar(
         title: const Text(
           "En savoir plus",
@@ -20,15 +21,18 @@ class Details extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 4, 53, 121),
         elevation: 0.0,
       ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
           children: [
-            CircleAvatar(
-              radius: 70.0,
-              backgroundImage: AssetImage("assets/img/profil.jpg"),
+            Container(
+              alignment: Alignment.center,
+              child: const CircleAvatar(
+                radius: 70.0,
+                backgroundImage: AssetImage("assets/img/profil.jpg"),
+              ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
               child: Card(
                 color: Colors.transparent,

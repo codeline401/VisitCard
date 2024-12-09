@@ -9,7 +9,7 @@ class VisitCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff052555),
+      backgroundColor: const Color(colorBackground),
       appBar: AppBar(
         title: const Text(
           "Ma carte de Visite",

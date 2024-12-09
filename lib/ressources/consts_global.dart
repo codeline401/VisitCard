@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 const nomCarteDeVisite = 'Francis RANDRIANARIVONY';
 
+const colorBackground = 0xff052555;
+
 const nomDescriptionCarteDeVisite = Text(
   "Dart/Flutter Developper",
   textAlign: TextAlign.center,
